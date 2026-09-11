@@ -140,3 +140,25 @@ ResolveAI/
 ├── DECISION_LOG.md            # 14 non-obvious engineering decisions
 └── README.md                  # Setup, architecture & headline results
 ```
+
+---
+
+## 📚 Citations & Attribution (Per Assignment Rules)
+
+In accordance with the assignment rule (*"Cite anything you borrowed. Borrowing is fine; not knowing what you borrowed is not"*):
+1. **Primary Dataset**: [Customer Support on Twitter](https://www.kaggle.com/datasets/thoughtvector/customer-support-on-twitter) (Kaggle, `thoughtvector/customer-support-on-twitter`) — multi-turn support threads for `@AmazonHelp`.
+2. **AI & Core Frameworks**:
+   - **Google GenAI SDK** (`google-genai`): LLM intent classification and RAG response drafting with structured JSON schema outputs.
+   - **FastAPI** (`fastapi` / `uvicorn`): High-throughput asynchronous REST API for real-time ticket ingestion and triaging.
+   - **Next.js 16** (`next`, React 19, TypeScript, Turbopack): Reactive dashboard, streaming simulator, and SVG analytics visualization.
+   - **Pydantic v2**: Type-safe runtime schema validation for intent, triage decision, and QA scoring objects.
+   - **Scikit-Learn** (`scikit-learn`): Statistical metric utilities for multiclass evaluation.
+
+---
+
+## 📝 Submission Details
+* **Submission Form**: [Hiver Take-Home Submission Portal](https://intelligent-bar-256.notion.site/39492cbf0da2800682cfc78a600a745f)
+* **Repository Link**: [https://github.com/AyanSayyad07/ResolveAI](https://github.com/AyanSayyad07/ResolveAI)
+* **Report Link**: [REPORT.md](https://github.com/AyanSayyad07/ResolveAI/blob/main/REPORT.md)
+* **Decision Log Link**: [DECISION_LOG.md](https://github.com/AyanSayyad07/ResolveAI/blob/main/DECISION_LOG.md)
+
