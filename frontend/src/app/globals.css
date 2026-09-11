@@ -8,15 +8,16 @@
   --primary: #4F46E5;
   --primary-hover: #4338CA;
   --teal-accent: #0D9488;
-  --card-bg: #FFFFFF;
-  --border-color: #E2E8F0;
 }
 
 body {
   background-color: var(--background);
   color: var(--foreground);
   font-family: var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  letter-spacing: -0.012em;
+  letter-spacing: -0.015em;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.03) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(13, 148, 136, 0.03) 0px, transparent 50%);
 }
 
 /* Shimmer animation for skeleton loaders */
@@ -35,29 +36,34 @@ body {
   animation: shimmerWave 1.6s infinite linear;
 }
 
-/* Soft-edged card system */
-.card-soft {
+/* Modern Card System */
+.modern-card {
   background: #FFFFFF;
-  border-radius: 12px;
+  border-radius: 16px;
   border: 1px solid #F1F5F9;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03), 0 6px 16px -2px rgba(0, 0, 0, 0.03);
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.card-soft-hover:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.06), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
+.modern-card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.04), 0 12px 24px -4px rgba(0, 0, 0, 0.05);
   border-color: #E2E8F0;
 }
 
-.card-soft-selected {
+.modern-card-active {
   background: #FFFFFF;
-  border-radius: 12px;
+  border-radius: 16px;
   border: 2px solid #4F46E5;
-  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1), 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.08), 0 8px 20px -2px rgba(79, 70, 229, 0.06);
 }
 
-/* Custom scrollbar */
+/* Pill Search Inner Shadow */
+.search-pill-shadow {
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.03);
+}
+
+/* Custom delicate scrollbar */
 ::-webkit-scrollbar {
   width: 5px;
   height: 5px;
