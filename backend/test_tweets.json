@@ -1,0 +1,37 @@
+[
+    {
+        "id": "1",
+        "author": "user123",
+        "text": "@AmazonHelp My package is 3 days late and I need it for a birthday party tomorrow! What is going on???"
+    },
+    {
+        "id": "2",
+        "author": "user456",
+        "text": "@AmazonHelp how do I return a kindle that won't turn on?"
+    },
+    {
+        "id": "3",
+        "author": "user789",
+        "text": "@AmazonHelp WORST SERVICE EVER. YOU LOST MY ORDER AND REFUSE TO REFUND ME."
+    },
+    {
+        "id": "4",
+        "author": "user001",
+        "text": "@AmazonHelp Do you guys ship to New Zealand?"
+    },
+    {
+        "id": "5",
+        "author": "user002",
+        "text": "@AmazonHelp Thanks for resolving my issue so quickly! Appreciate it."
+    },
+    {
+        "id": "6",
+        "author": "user003",
+        "text": "@AmazonHelp My prime video is buffering constantly on my smart TV."
+    },
+    {
+        "id": "7",
+        "author": "user004",
+        "text": "@AmazonHelp I received the wrong item. Ordered a book, got a toaster."
+    }
+]
