@@ -14,8 +14,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ResolveAI | Autonomous Customer Support Intelligence & Resolution Hub",
-  description: "AI-driven customer support triaging, real-time intent classification, sentiment analysis, and grounded RAG drafting.",
+  title: "ResolveAI | Autonomous Support Intelligence & Resolution Cockpit",
+  description: "Next-generation customer support intelligence cockpit: real-time intent triaging, sentiment analysis, policy assessment, and grounded RAG responses.",
 };
 
 export default function RootLayout({
@@ -29,7 +29,7 @@ export default function RootLayout({
       className={`${jakartaSans.variable} ${jetbrainsMono.variable} h-full antialiased`}
       suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col antialiased bg-slate-50 text-slate-900 selection:bg-indigo-500 selection:text-white font-sans" suppressHydrationWarning>
+      <body className="min-h-full flex flex-col antialiased bg-[#fafafa] text-zinc-900 selection:bg-indigo-500 selection:text-white font-sans ambient-glow" suppressHydrationWarning>
         {children}
       </body>
     </html>
