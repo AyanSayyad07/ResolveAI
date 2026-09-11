@@ -82,7 +82,7 @@ def main(eval_file_path: str):
         
         score = evaluate_response(item["text"], drafted, "General Support Guidelines")
         results.append({
-            "tweet_id": item["tweet_id"],
+            "tweet_id": item.get("tweet_id", item.get("id", "unknown")),
             "scores": score.model_dump()
         })
         
