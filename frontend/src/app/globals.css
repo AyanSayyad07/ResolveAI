@@ -16,7 +16,7 @@ body {
   background-color: var(--background);
   color: var(--foreground);
   font-family: var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.012em;
 }
 
 /* Shimmer animation for skeleton loaders */
@@ -35,56 +35,40 @@ body {
   animation: shimmerWave 1.6s infinite linear;
 }
 
-/* Floating soft-edged card design system */
-.floating-card {
+/* Soft-edged card system */
+.card-soft {
   background: #FFFFFF;
-  border-radius: 1.25rem;
-  border: 1px solid rgba(226, 232, 240, 0.9);
-  box-shadow: 0 10px 25px -4px rgba(15, 23, 42, 0.04), 0 4px 6px -2px rgba(15, 23, 42, 0.02);
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  border-radius: 12px;
+  border: 1px solid #F1F5F9;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.floating-card-hover:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 16px 32px -4px rgba(15, 23, 42, 0.06), 0 6px 12px -3px rgba(15, 23, 42, 0.03);
-  border-color: rgba(203, 213, 225, 1);
+.card-soft-hover:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.06), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
+  border-color: #E2E8F0;
 }
 
-.floating-card-selected {
+.card-soft-selected {
   background: #FFFFFF;
-  border-radius: 1.25rem;
+  border-radius: 12px;
   border: 2px solid #4F46E5;
-  box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.1), 0 12px 28px -4px rgba(79, 70, 229, 0.08);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1), 0 4px 6px -1px rgba(0, 0, 0, 0.05);
 }
 
-/* Smooth fade-in entrance */
-@keyframes fadeInSlide {
-  from {
-    opacity: 0;
-    transform: translateY(6px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fade-in {
-  animation: fadeInSlide 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-}
-
-/* Custom delicate scrollbar */
+/* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
 }
 ::-webkit-scrollbar-track {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: #CBD5E1;
+  background: #E2E8F0;
   border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #94A3B8;
+  background: #CBD5E1;
 }
