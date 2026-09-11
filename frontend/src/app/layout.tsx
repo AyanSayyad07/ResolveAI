@@ -16,6 +16,11 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "ResolveAI | Intelligent Support Intelligence & Autonomous Resolution Hub",
   description: "Modern customer support intelligence cockpit with real-time intent triaging, sentiment analysis, grounded RAG responses, and dynamic analytics.",
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({

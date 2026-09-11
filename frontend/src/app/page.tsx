@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, useMemo, useRef } from "react";
+import ResolveLogo from "@/components/Logo";
 
 interface IntentResult {
   intent: string;
@@ -427,33 +428,9 @@ export default function Home() {
       {/* 1. Persistent Sidebar (260px fixed width, generous spacing, soft #F1F5F9 hover) */}
       <aside className="app-sidebar">
         <div style={{ display: "flex", flexDirection: "column", gap: "28px" }}>
-          {/* Brand Header */}
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", padding: "0 4px" }}>
-            <div style={{
-              width: "36px",
-              height: "36px",
-              minWidth: "36px",
-              minHeight: "36px",
-              borderRadius: "10px",
-              background: "linear-gradient(135deg, #4F46E5 0%, #0D9488 100%)",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              color: "#ffffff"
-            }}>
-              <svg width="18" height="18" style={{ minWidth: 18, minHeight: 18 }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
-              </svg>
-            </div>
-            <div>
-              <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-                <span style={{ fontSize: "16px", fontWeight: "800", letterSpacing: "-0.02em", color: "#0F172A" }}>ResolveAI</span>
-                <span style={{ fontSize: "10px", fontWeight: "700", padding: "2px 6px", borderRadius: "6px", backgroundColor: "#EEF2FF", color: "#4F46E5", border: "1px solid #E0E7FF" }}>
-                  v2.5
-                </span>
-              </div>
-              <p style={{ fontSize: "11px", color: "#64748B", margin: 0, fontWeight: "500" }}>Support Intelligence</p>
-            </div>
+          {/* Brand Header with Custom Modern ResolveLogo */}
+          <div style={{ padding: "0 2px" }}>
+            <ResolveLogo size={38} showWordmark={true} />
           </div>
 
           {/* Navigation Menu */}
